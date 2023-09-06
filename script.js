@@ -3,17 +3,17 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 20, value: 1 },
-  { minDegree: 21, maxDegree: 70, value: 2 },
-  { minDegree: 71, maxDegree: 110, value: 3 },
-  { minDegree: 111, maxDegree: 170, value: 4 },
-  { minDegree: 171, maxDegree: 220, value: 5 },
-  { minDegree: 221, maxDegree: 280, value: 6 },
-  { minDegree: 281, maxDegree: 300, value: 7 },
-  { minDegree: 301, maxDegree: 360, value: 8 },
+  { minDegree: 0, maxDegree: 45, value: "볼펜" },
+  { minDegree: 46, maxDegree: 90, value: "한번더" },
+  { minDegree: 91, maxDegree: 135, value: 3 },
+  { minDegree: 136, maxDegree: 180, value: 4 },
+  { minDegree: 181, maxDegree: 225, value: 5 },
+  { minDegree: 226, maxDegree: 270, value: 6 },
+  { minDegree: 271, maxDegree: 315, value: 7 },
+  { minDegree: 316, maxDegree: 360, value: 8 },
 ];
 //Size of each piece
-const data = [1, 1, 1, 1, 1, 1, 1, 1];
+const data = [3, 1, 4, 2, 3, 1, 4, 2];
 //background color for each piece
 var pieColors = [
   "#b3d2ff",
@@ -33,7 +33,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: [1, 2, 3, 4, 5, 6, 7, 8],
+    labels: ["볼펜", "한번더", "사탕", "셀카 with 나래", "스티커", "한번더", "하리보", "나래 set"],
     //Settings for dataset/pie
     datasets: [
       {
