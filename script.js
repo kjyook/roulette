@@ -54,9 +54,9 @@ let myChart = new Chart(wheel, {
       },
       //display labels inside pie chart
       datalabels: {
-        color: "#ffffff",
+        color: "black",
         formatter: (_, context) => context.chart.data.labels[context.dataIndex],
-        font: { size: 24 },
+        font: { size: 18 },
       },
     },
   },
@@ -66,7 +66,7 @@ const valueGenerator = (angleValue) => {
   for (let i of rotationValues) {
     //if the angleValue is between min and max then display it
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
-      finalValue.innerHTML = `<p>Value: ${i.value}</p>`;
+      finalValue.innerHTML = `<p>💕나래와 함께 나랑올랑💕</p>`;
       spinBtn.disabled = false;
       break;
     }
@@ -81,7 +81,7 @@ let resultValue = 101;
 spinBtn.addEventListener("click", () => {
   spinBtn.disabled = true;
   //Empty final value
-  finalValue.innerHTML = `<p>Good Luck!</p>`;
+  finalValue.innerHTML = `<p>💕나래와 함께 나랑올랑💕</p>`;
   //Generate random degrees to stop at
   let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
   //Interval for rotation animation
