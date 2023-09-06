@@ -7,3 +7,6 @@ https://www.youtube.com/watch?v=ETFdNsBP04c
 
 # 돌림판 기능 수정
 script.js 의 수치를 조정하여 돌림판 칸 수, 칸 크기, 이름 등을 바꿀 수 있습니다.
+
+# 돌림판 사이트 바로가기
+https://my-roulette.netlify.app/
