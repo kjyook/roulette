@@ -33,7 +33,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["볼펜", "한번더", "사탕", "📷", "스티커", "한번더", "하리보", "나래 set"],
+    labels: ["볼펜", "🔄", "사탕", "📷", "스티커", "🔄", "하리보", "나래set"],
     //Settings for dataset/pie
     datasets: [
       {
