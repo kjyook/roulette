@@ -7,12 +7,13 @@
   body {
     height: 100vh;
     background: #ffffff;
+    background-size: 100% 100%;
   }
   .wrapper {
     width: 90%;
     max-width: 34.37em;
     max-height: 90vh;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
